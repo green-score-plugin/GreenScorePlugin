@@ -146,7 +146,7 @@ async function getSymfonyUserId() {
       return null;
     }
 
-    const response = await fetch(`${CONFIG.BACKEND.BASE_URL}/api/user-info`, {
+    const response = await fetch(`${CONFIG.BACKEND.WEBSITE_URL}/api/user-info`, {
       credentials: "include",
       headers: {
         Accept: "application/json",
@@ -612,7 +612,7 @@ browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
       try {
         const response = await fetch(
-          `${CONFIG.BACKEND.BASE_URL}/api/equivalent?gCO2=${gCO2}&count=${count}`,
+          `${CONFIG.BACKEND.WEBSITE_URL}/api/equivalent?gCO2=${gCO2}&count=${count}`,
           {
             method: "GET",
             headers: {
@@ -622,7 +622,7 @@ browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
         );
 
         if (!response.ok) {
-          console.log(`${CONFIG.BACKEND.BASE_URL}/api/equivalent?gCO2=${gCO2}&count=${count}`)
+          console.log(`${CONFIG.BACKEND.WEBSITE_URL}/api/equivalent?gCO2=${gCO2}&count=${count}`)
           throw new Error(`Erreur API Symfony : ${response.status}`);
         }
 
