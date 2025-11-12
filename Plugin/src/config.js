@@ -1,7 +1,7 @@
 const CONFIG = {
     BACKEND: {
       PLUGIN_BACKEND_URL: "http://127.0.0.1:8080/index.php", // URL du backend du plugin
-
+      BASE_URL: "http://127.0.0.1:8000", // URL de base du site Greenscore
       DOMAIN: "127.0.0.1", // Utilisé pour récupérer l'ID utilisateur
       
       WEBSITE_URL: "http://127.0.0.1:8000", // URL du site Greenscore
