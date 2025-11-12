@@ -1,0 +1,5 @@
+/Plugin/node_modules
+
+/BackendPlugin/.env.local
+/BackendPlugin/debug_log.txt
+/BackendPlugin/error_log.json
